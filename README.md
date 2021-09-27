@@ -14,3 +14,5 @@ Postgresql image used in the Camel K Workshop
     oc create -f tekton/source-pvc.yml
     oc apply -f tekton/s2i-task.yml
     oc apply -f tekton/postgresql-pipeline.yml
+
+[![Docker Repository on Quay](https://quay.io/repository/gcamposo/postgresql-camelk/status "Docker Repository on Quay")](https://quay.io/repository/gcamposo/postgresql-camelk)
