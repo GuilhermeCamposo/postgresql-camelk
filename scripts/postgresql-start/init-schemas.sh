@@ -1,3 +1,4 @@
 #!/bin/sh
 
-psql -d $POSTGRESQL_DATABASE -c "CREATE SCHEMA IF NOT EXISTS camelk AUTHORIZATION $POSTGRESQL_USER; CREATE TABLE IF NOT EXISTS camelk.messages (message varchar(80));"
+psql -U $POSTGRESQL_USER  -d $POSTGRESQL_DATABASE -c "CREATE TABLE IF NOT EXISTS messages (message varchar(80));"
+echo "Table Created!"
